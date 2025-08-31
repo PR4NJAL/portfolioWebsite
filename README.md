@@ -7,3 +7,7 @@ This is going to be huge task for me, if I consider that I don't want vibe code 
 
 
 I'll start by intializing a Git repository, and then build from there. Expect this README file to change alongside future commits :)
+
+I am going to be trying to plan the website by first building the website in vanilla HTML (+ CSS (+ JavaScript))
+
+And then try a DYNAMIC website using ReactJS
