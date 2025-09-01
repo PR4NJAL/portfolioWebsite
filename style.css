@@ -65,9 +65,35 @@ section h1 {
     padding-left: 0.7rem;
 }
 
-ul {
-    list-style: disc inside;
-    margin-left: 1rem;
+/*TODO:Check the changes*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #101010;
+  background-color: #99d1db;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.gridl {
+    display:grid;
+    row-gap:50px;
+    grid-template-columns:auto auto; /*2 columns*/
 }
 
 form {
@@ -118,6 +144,7 @@ footer {
     font-size: 1rem;
 }
 
+/*TODO:Conside adding the grid layout here as well*/
 @media (max-width: 700px) {
     nav {
         flex-direction: column;
