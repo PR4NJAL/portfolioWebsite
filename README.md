@@ -11,3 +11,5 @@ I'll start by intializing a Git repository, and then build from there. Expect th
 I am going to be trying to plan the website by first building the website in vanilla HTML (+ CSS (+ JavaScript))
 
 And then try a DYNAMIC website using ReactJS
+
+THE WEBSITE IS LIVE AT: https://pr4njal.github.io/portfolioWebsite/
