@@ -13,3 +13,6 @@ I am going to be trying to plan the website by first building the website in van
 And then try a DYNAMIC website using ReactJS
 
 THE WEBSITE IS LIVE AT: https://pr4njal.github.io/portfolioWebsite/
+
+I have added some cool components that have to be integrated in the website(optional)
+But also I have to check the color scheme

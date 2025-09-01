@@ -4,16 +4,18 @@
     box-sizing: border-box;
 }
 
+/*TODO:Check the color scheme later*/
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f7f7f7;
-    color: #222;
+    background: #101010;
+    color: #BABBF1;
     line-height: 1.6;
 }
 
 header {
-    background: #222;
-    color: #fff;
+    background: #BABBF1;
+    color: #101010;
     padding: 1.5rem 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
@@ -25,7 +27,7 @@ nav {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /*This is causing an issue*/
 }
 
 nav h2 {
@@ -43,23 +45,23 @@ nav p {
 }
 
 nav p:hover {
-    color: #ff9800;
+    color: #99d1db;
 }
 
 section {
     max-width: 900px;
     margin: 2rem auto;
-    background: #fff;
+    background: #101010;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
 }
 
 section h1 {
-    color: #222;
+    color: #BABBF1;
     margin-bottom: 1rem;
     font-size: 1.7rem;
-    border-left: 4px solid #ff9800;
+    border-left: 4px solid #99d1db;
     padding-left: 0.7rem;
 }
 
@@ -88,12 +90,12 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border: 1.5px solid #ff9800;
+    border: 1.5px solid #99d1db;
     outline: none;
 }
 
 input[type="submit"] {
-    background: #ff9800;
+    background: #99d1db;
     color: #fff;
     border: none;
     padding: 0.7rem 1.5rem;
@@ -104,12 +106,12 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background: #e68900;
+    background: #99d1db;
 }
 
 footer {
-    background: #222;
-    color: #fff;
+    background: #BABBF1;
+    color: #101010;
     text-align: center;
     padding: 1.2rem 0;
     margin-top: 2rem;
