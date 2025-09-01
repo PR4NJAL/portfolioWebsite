@@ -16,3 +16,5 @@ THE WEBSITE IS LIVE AT: https://pr4njal.github.io/portfolioWebsite/
 
 I have added some cool components that have to be integrated in the website(optional)
 But also I have to check the color scheme
+
+So far some cool resources I have used a W3School, ofcourse MDN and finally GFG websites (In decreasing order of usage)
