@@ -1,72 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pranjal's Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!--These are the planned tags that we can use to modularize the website into manageble section-->
-        <header><!--Block-->
-            <nav><!--Block-->
-                <h2>Pranjal Bhardwaj</h2><!--Block-->
-                <p>Home</p><!--Block-->
-                <p>About Me</p>
-                <p>Projects</p>
-                <p>Contact Me</p>
-                <p>Buy Me A Coffee</p>
-            </nav>
-        </header>
-        <aside><!--Block--><!--Could make this transition from the navbar-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranjal Bhardwaj - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Pranjal Bhardwaj</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#coffee">Coffee</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
 
-        </aside>
-        <section><!--Block-->
-            <h1>About Me</h1>
-            <p>Hey there!<br>
-            <br>I'm a curious creator who loves to learn and build things, whether it's a website from scratch or a new recipe in the kitchen. When I'm not coding, you can find me exploring the great outdoors, getting lost in a good book, or trying to teach my dog new tricks (he's still working on "high-five"). I'm passionate about turning ideas into reality and believe that a little bit of creativity and a lot of caffeine can solve almost any problem.<br>
-            <br>Feel free to connect with me and share what you're passionate about!
-        </p>
-        </section>
-        <section>
-            <h1>Projects</h1>
-            <ul>
-                <li>LazyOllama</li>
-                <li>Bollydle</li>
-                <li>Dating App</li>
-                <li>PDF Heading Extractor</li>
-                <li>Sentiment Analysis Dashboard</li>
-                <li>Vehicle-To-Vehicle Communication</li>
-            </ul>
-        </section>
-        <section>
-            <h1>Contact Me</h1>
-            <form action="/api_endpoint.php" method="post" autocomplete="on"><!--Will we do it in PHP? I am tempted-->
-                <fieldset>
-                    <label for="fname">First Name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last Name:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
-                    <label for="email">Email ID:</label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="msg">Leave A Message For Me:</label><br>
-                    <textarea name="msg" rows="10" cols="30"></textarea>
-                    <br><input type="submit" value="Submit">
-                </fieldset>
-            </form>
-        </section>
-        <section>
-            <h1>Buy Me A Coffee</h1>
-            <p>Please Scan QR Given Below:</p>
-        </section>
-        <article><!--Block--><!--Should be possible to distribute it independently from the rest of the web site.-->
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Hi, I'm Pranjal</h1>
+          <p>
+            A curious creator who loves to learn and build things, whether it's
+            a website from scratch or a new recipe in the kitchen.
+          </p>
+          <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+      </section>
 
-        </article>
-        <footer><!--Block-->
-            <p>Email: pranjalbhardwaj.in@gmail.com</p>
-            <p>Mobile Number: +918800560064</p>
-            <p>GitHub: https://github.com/PR4NJAL</p>
-            <p>LinkedIn: www.linkedin.com/in/pranjal-bhardwaj-290151283</p>
-        </footer>
-    </body>
+      <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="profile-placeholder">📸</div>
+          </div>
+          <div class="about-text">
+            <p>Hey there!</p>
+            <p>
+              I'm a curious creator who loves to learn and build things, whether
+              it's a website from scratch or a new recipe in the kitchen. When
+              I'm not coding, you can find me exploring the great outdoors,
+              getting lost in a good book, or trying to teach my dog new tricks
+              (he's still working on "high-five").
+            </p>
+            <p>
+              I'm passionate about turning ideas into reality and believe that a
+              little bit of creativity and a lot of caffeine can solve almost
+              any problem. Feel free to connect with me and share what you're
+              passionate about!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--TODO:Add the github repo link-->
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">🦙</div>
+            <div class="project-content">
+              <h3 class="project-title">LazyOllama</h3>
+              <p class="project-description">
+                An innovative AI-powered tool that simplifies machine learning
+                workflows with an intuitive interface.
+              </p>
+              <button class="project-button">View on GitHub</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">📄</div>
+            <div class="project-content">
+              <h3 class="project-title">PDF Heading Extractor</h3>
+              <p class="project-description">
+                A smart document processing tool that automatically extracts and
+                organizes headings from PDF files.
+              </p>
+              <button class="project-button">View on GitHub</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">💕</div>
+            <div class="project-content">
+              <h3 class="project-title">Dating App</h3>
+              <p class="project-description">
+                A modern social connection platform with advanced matching
+                algorithms and real-time messaging.
+              </p>
+              <button class="project-button">View on GitHub</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">🎬</div>
+            <div class="project-content">
+              <h3 class="project-title">Bollydle</h3>
+              <p class="project-description">
+                A fun Bollywood-themed guessing game inspired by Wordle,
+                featuring movie titles and actors.
+              </p>
+              <button class="project-button">View on GitHub</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">📊</div>
+            <div class="project-content">
+              <h3 class="project-title">Sentiment Analysis Dashboard</h3>
+              <p class="project-description">
+                A comprehensive data visualization tool for analyzing sentiment
+                trends in social media and reviews.
+              </p>
+              <button class="project-button">View on GitHub</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">🚗</div>
+            <div class="project-content">
+              <h3 class="project-title">V2V Communication</h3>
+              <p class="project-description">
+                A vehicle-to-vehicle communication system for enhanced road
+                safety and traffic management.
+              </p>
+              <button class="project-button">View on GitHub</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <form
+          class="contact-form"
+          action="./form.php"
+          method="post"
+          target="_blank"
+          autocomplete="on"
+        >
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required />
+          </div>
+
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="msg">Message</label>
+            <textarea
+              name="msg"
+              id="msg"
+              rows="5"
+              placeholder="Tell me about your project or just say hi!"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </section>
+
+      <section id="coffee">
+        <div class="coffee-section">
+          <h2 class="section-title">Buy Me A Coffee</h2>
+          <p>
+            If you like my work and want to support me, feel free to buy me a
+            coffee!
+          </p>
+          <div class="qr-placeholder">QR</div>
+          <p>Scan the QR code above to support my work</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>pranjalbhardwaj.in@gmail.com</p>
+          <p>+91 8800560064</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <p><a href="https://github.com/PR4NJAL" target="_blank">GitHub</a></p>
+          <p>
+            <a
+              href="https://linkedin.com/in/pranjal-bhardwaj-290151283"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Thanks for visiting!</h3>
+          <p>Let's build something amazing together.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
