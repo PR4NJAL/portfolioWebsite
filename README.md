@@ -18,3 +18,9 @@ I have added some cool components that have to be integrated in the website(opti
 But also I have to check the color scheme
 
 So far some cool resources I have used a W3School, ofcourse MDN and finally GFG websites (In decreasing order of usage)
+
+I have also created a AI dev branch that can be merged into the development branch, and later the developement branch will be mergered into the main branch.
+
+I do want to end up writing some tests, make a CI/CD pipeline, and start working on the backend
+
+I am still confused how should I handle the form submission????
