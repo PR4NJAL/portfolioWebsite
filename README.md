@@ -7,8 +7,6 @@ This is going to be huge task for me, if I consider that I don't want vibe code 
 - I could also end up using a JS Framework
 - I don't think there is any major need for a backend right now? We'll address this issue sooner or later
 
-I am going to be trying to plan the website by first building the website in vanilla HTML (+ CSS (+ JavaScript))
-
 And then try a DYNAMIC website using ReactJS
 
 THE WEBSITE IS LIVE AT: https://pr4njal.github.io/portfolioWebsite/
@@ -17,6 +15,5 @@ I have added some cool components that have to be integrated in the website(opti
 
 So far some cool resources I have used a W3School, ofcourse MDN and finally GFG website
 
-I do want to end up writing some tests, make a CI/CD pipeline, and start working on the backend
+I do want to end up writing some tests, make a CI/CD pipeline
 
-I am still confused how should I handle the form submission????
